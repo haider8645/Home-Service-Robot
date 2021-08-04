@@ -1,8 +1,5 @@
 #!/bin/sh
 
-source /opt/ros/kinetic/setup.bash
-source /home/robond/ROS/Home-Service-Robot/home_service_robot_ws/devel/setup.bash 
-
 xterm  -e "roslaunch turtlebot_gazebo turtlebot_world.launch" &
 sleep 5
 
