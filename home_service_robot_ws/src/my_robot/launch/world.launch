@@ -8,11 +8,10 @@
   <arg name="z" default="0"/>
   <arg name="roll" default="0"/>
   <arg name="pitch" default="0"/>
-  <arg name="yaw" default="1.5708"/>
+  <arg name="yaw" default="0"/>
 
   <!-- Launch other relevant files-->
   <include file="$(find my_robot)/launch/robot_description.launch"/>
-
 
   <!-- World File -->
   <arg name="world_file" default="$(find my_robot)/worlds/Haider.world"/>

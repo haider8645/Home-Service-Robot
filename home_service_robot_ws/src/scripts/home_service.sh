@@ -8,7 +8,7 @@ sleep 5
 xterm -e  "roslaunch where_am_i amcl.launch" &
 sleep 5
 
-xterm  -e "roslaunch turtlebot_rviz_launchers view_navigation.launch" &
+xterm  -e "roslaunch my_robot view_navigation.launch" &
 sleep 5
 
 xterm  -e "roslaunch add_markers add_markers.launch" &

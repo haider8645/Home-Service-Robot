@@ -1,0 +1,6 @@
+<!--
+  Used for visualising the my robot while building a map or navigating with the ros navigation stack.
+ -->
+<launch>
+  <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find my_robot)/launch/rviz/navigation.rviz"/>
+</launch>
