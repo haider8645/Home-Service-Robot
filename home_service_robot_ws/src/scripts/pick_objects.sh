@@ -1,9 +1,12 @@
 #!/bin/sh
 
-xterm  -e "roslaunch turtlebot_gazebo turtlebot_world.launch" &
+
+# launch world.launch to deploy my robot in the environment
+xterm -e  "roslaunch my_robot world.launch"  &
 sleep 5
 
-xterm  -e "roslaunch turtlebot_gazebo amcl_demo.launch" &
+# launch amcl.launch for localization done in the Where Am I project
+xterm -e  "roslaunch where_am_i amcl.launch" &
 sleep 5
 
 xterm  -e "roslaunch turtlebot_rviz_launchers view_navigation.launch" &
